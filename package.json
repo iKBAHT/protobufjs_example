@@ -1,0 +1,22 @@
+{
+  "name": "protobufjs_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "dependencies": {
+    "protobufjs": "6.8.6"
+  },
+  "devDependencies": {
+    "ts-node": "5.0.1",
+    "typescript": "2.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate_js": "pbjs -t static-module -o geoCode.js geoCode.proto",
+    "generate_ts": "pbts -n -o geoCode.d.ts geoCode.js",
+    "example": "ts-node main.ts",
+    "do": "npm run generate_js && npm run generate_ts && npm run example"
+  },
+  "author": "iKBAHT@gmail.com",
+  "license": "ISC"
+}

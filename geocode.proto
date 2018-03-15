@@ -1,0 +1,5 @@
+message GeoCode {
+	required double longitude = 1;
+	required double latitude = 2;
+	required string address = 3;
+}
